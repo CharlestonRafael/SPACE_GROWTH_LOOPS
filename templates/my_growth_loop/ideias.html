@@ -1,0 +1,38 @@
+{% extends 'my_growth_loop/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="pagina-inicial margin-top-100">
+    <main class="principal">
+        <section class="conteudo">
+          <div class="row">
+            <div class="col-md-9 col-12">
+              <h1 class="titulo"> Ideias sugeridas pelo My Growth Loop o meu DECK de Crescimento!!!</h1>
+            </div>
+
+            <div class="col-md-3 col-12">
+              <a class="nav-link btn btn-outline-light font-size-22" href="{% url 'aquisicao' %}"><i class="fa-regular fa-calendar-plus" style="color: #7B78E5;"></i>&nbsp; Crie uma ideia</a>
+            </div>
+          </div>
+          
+          {% if cards %}
+          {% for Repositorio_Ideias in card %}
+          <div class="card-deck align-left-desktop padding-top-20">
+            <div class="card padding-top-20 text-white bg-color-black border-light">
+                <div class="card-header font-size-22">{{ Ideias.nome }}</div>
+                <div class="card-body">
+                  <p class="font-size-18 font-weight-light">{{ deias.descricao }}</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><a class="nav-link btn btn-outline-light" href="{% url 'awareness' %}"><i class="fa-solid fa-land-mine-on" style="color: #7B78E5;"></i>&nbsp;  Awareness</a></small>
+                </div>
+                {% endfor %}
+                {% else %}
+                {% endif %}
+            </div>
+          </div>
+        </section>
+    </main>
+</div>
+
+{% endblock %}

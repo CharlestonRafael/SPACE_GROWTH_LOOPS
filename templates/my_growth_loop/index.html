@@ -1,0 +1,118 @@
+{% extends 'my_growth_loop/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="pagina-inicial margin-top-100">
+  <main class="principal">
+      <section class="conteudo">
+        <h1 class="titulo"> My Growth Loop o meu DECK de Crescimento!!!</h1>
+          <section class="padding-top-20">
+            <div class="card-deck text-center">
+              <div class="card text-white bg-success">
+                  <div class="card-body">
+                    <h2 class="card-title font-weight-bold">Novos Clientes</h2>
+                    <p class="card-text font-weight-bold font-size-60">50</p>
+                  </div>
+              </div>
+          
+              <div class="card text-white bg-warning">
+                  <div class="card-body">
+                    <h2 class="card-title font-weight-bold">Clientes Recorrentes</h2>
+                    <p class="card-text font-weight-bold font-size-60">250</p>
+                  </div>
+              </div>
+
+              <div class="card text-white bg-danger">
+                <div class="card-body">
+                  <h2 class="card-title font-weight-bold">Churn</h2>
+                  <p class="card-text font-weight-bold font-size-60">20</p>
+                </div>
+              </div>
+
+              <div class="card text-white bg-primary">
+                <div class="card-body">
+                  <h2 class="card-title font-weight-bold">Clientes Ativos</h2>
+                  <p class="card-text font-weight-bold font-size-60">300</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="padding-top-20">
+            <div class="card-deck text-center">
+              <div class="card text-white bg-color-black border-light">
+                  <div class="card-body">
+                    <h2 class="card-title font-weight-bold">Visitantes</h2>
+                    <p class="card-text font-weight-bold font-size-40">1000</p>
+                  </div>
+
+                  <div class="card-footer">
+                    <small style="color: #7B78E5;"><i class="fa-solid fa-land-mine-on" style="color: #7B78E5;"></i>&nbsp;  Awareness</small>
+                  </div>
+              </div>
+          
+              <div class="card text-white bg-color-black border-light">
+                  <div class="card-body">
+                    <h2 class="card-title font-weight-bold">Leads</h2>
+                    <p class="card-text font-weight-bold font-size-40">250</p>
+                  </div>
+
+                  <div class="card-footer">
+                    <small style="color: #7B78E5;"><i class="fa-solid fa-users" style="color: #7B78E5;"></i>&nbsp; Aquisição</small>
+                  </div>
+              </div>
+          
+              <div class="card text-white bg-color-black border-light">
+                  <div class="card-body">
+                    <h2 class="card-title font-weight-bold">Oportunidades</h2>
+                    <p class="card-text font-weight-bold font-size-40">100</p>
+                  </div>
+
+                  <div class="card-footer">
+                    <small style="color: #7B78E5;"><i class="fa-solid fa-power-off" style="color: #7B78E5;"></i>&nbsp; Ativação</small>
+                  </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="padding-top-20">
+            <div class="row">
+              <div class="col-md-8 col-12">
+                <div class="padding-top-20 padding-bottom-400 padding-left-20 border bg-color-black border-radius-10">
+                  <h2 class="font-color-white">Receita faturamento</h2>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-12">
+                <div class="padding-top-20 padding-bottom-400 padding-left-20 border bg-color-black border-radius-10">
+                  <h2 class="font-color-white">Ideias Sugeridas Recentemente</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row padding-top-20">
+              <div class="col-md-6 col-12">
+                <div class="padding-top-20 padding-bottom-400 padding-left-20 border bg-color-black border-radius-10">
+                  <h2 class="font-color-white">Usuários por Grupo de Canais padrão da sessão</h2>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-12">
+                <div class="padding-top-20 padding-bottom-400 padding-left-20 border bg-color-black border-radius-10">
+                  <h2 class="font-color-white">Novos Usuários</h2>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-12">
+                <div class="padding-top-20 padding-bottom-400 padding-left-20 border bg-color-black border-radius-10">
+                  <h2 class="font-color-white">Tempo Médio de Engajamento</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+      </section>
+  </main>
+</div>
+{% endblock %}
+
+

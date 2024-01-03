@@ -1,0 +1,89 @@
+{% load static %}
+<nav class="navbar fixed-top navbar-expand-lg navbar bg-color-white" style="background-color:#272d48">
+    <a class="navbar-brand justify-content-center" href="{% url 'index' %}"><img src="{% static '/assets/logo/logo-growth-loops-menu.png'  %}" title="Growth Loops Logo" alt="Growth Loops Logo"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon padding-top-5"><i class="fa-solid fa-bars" style="color: #7B78E5;"></i></span>
+    </button>
+                  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-endr">
+            <li class="nav-item d-none d-sm-none d-md-block">
+                <a class="nav-link btn btn-outline-light btn-block" href="{% url 'ideias' %}" style="color: #7B78E5;"><i class="fa-solid fa-lightbulb" style="color: #7B78E5;"></i>&nbsp;  Ideias</a>
+            </li>&nbsp; &nbsp;
+
+            <li class="nav-item d-none d-sm-none d-md-block">
+                <a class="nav-link btn btn-outline-light btn-block" href="{% url 'growth_plan' %}" style="color: #7B78E5;"><i class="fa-solid fa-map-location-dot" style="color: #7B78E5;"></i>&nbsp;  Growth Plan</a>
+            </li>&nbsp; &nbsp;
+
+            <li class="nav-item d-none d-sm-none d-md-block">
+                <a class="nav-link btn btn-outline-light btn-block" href="{% url 'meu_perfil' %}" style="color: #7B78E5;"><i class="fa-solid fa-user-gear" style="color: #7B78E5;"></i>&nbsp;  Meu Perfil</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav content-center d-block d-lg-none d-xl-none">
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-light" href="{% url 'index' %}"><i class="fa-solid fa-house" style="color: #7B78E5;"></i>&nbsp;  Home</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav content-center padding-top-30">
+            <p class="font-weight-bold font-color-white font-size-18 align-left-desktop padding-top-20 padding-bottom-20 d-block d-lg-none d-xl-none">Métricas</p>
+
+            <li class="nav-item d-block d-lg-none d-xl-none margin-top-neg-20">
+                <a class="nav-link btn btn-outline-light" href="{% url 'awareness' %}"><i class="fa-solid fa-land-mine-on" style="color: #7B78E5;"></i>&nbsp; Awareness</a>
+            </li>
+
+            <li class="nav-item margin-top-10 d-block d-lg-none d-xl-none">
+                <a class="nav-link btn btn-outline-light" href="{% url 'aquisicao' %}"><i class="fa-solid fa-users" style="color: #7B78E5;"></i>&nbsp; Aquisição</a>
+            </li>
+
+            <li class="nav-item margin-top-10 d-block d-lg-none d-xl-none">
+                <a class="nav-link btn btn-outline-light" href="{% url 'ativacao' %}"><i class="fa-solid fa-power-off" style="color: #7B78E5;"></i>&nbsp; Ativação</a>
+            </li>
+
+            <li class="nav-item margin-top-10 d-block d-lg-none d-xl-none">
+                <a class="nav-link btn btn-outline-light" href="{% url 'retencao' %}"><i class="fa-solid fa-users-gear" style="color: #7B78E5;"></i>&nbsp; Retenção</a>
+            </li>
+
+            <li class="nav-item margin-top-10 d-block d-lg-none d-xl-none">
+                <a class="nav-link btn btn-outline-light" href="{% url 'receita' %}"><i class="fa-solid fa-sack-dollar" style="color: #7B78E5;"></i>&nbsp; Receita</a>
+            </li>
+
+            <li class="nav-item margin-top-10 d-block d-lg-none d-xl-none">
+                <a class="nav-link btn btn-outline-light" href="{% url 'referral' %}"><i class="fa-solid fa-people-arrows" style="color: #7B78E5;"></i>&nbsp; Referral</a>
+            </li>
+
+        </ul>
+
+
+        <ul class="navbar-nav content-center padding-top-30 padding-bottom-30 d-block d-lg-none d-xl-none">
+            <p class="ffont-weight-bold font-color-white font-size-18 align-left-desktop padding-top-20 padding-bottom-20">Gestão de Growth</p>
+
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-light" href="{% url 'ideias' %}"><i class="fa-solid fa-lightbulb" style="color: #7B78E5;"></i>&nbsp; Ideias</a>
+            </li>
+
+            <li class="nav-item margin-top-10">
+                <a class="nav-link btn btn-outline-light" href="{% url 'growth_plan' %}"><i class="fa-solid fa-map-location-dot" style="color: #7B78E5;"></i>&nbsp; Growth Plan</a>
+            </li>
+        </ul>
+
+
+        <ul class="navbar-nav content-center padding-top-30 padding-bottom-30 d-block d-lg-none d-xl-none">
+            <p class="font-weight-bold font-color-white font-size-18 align-left-desktop padding-top-20 padding-bottom-20 d-block d-lg-none d-xl-none">Configurações</p>
+
+            <li class="nav-item ">
+                <a class="nav-link btn btn-outline-light" href="{% url 'integracoes' %}"><i class="fa-solid fa-network-wired" style="color: #7B78E5;"></i>&nbsp; Integrações</a>
+            </li>
+
+            <li class="nav-item margin-top-10">
+                <a class="nav-link btn btn-outline-light" href="{% url 'usuarios' %}"><i class="fa-solid fa-user-plus" style="color: #7B78E5;"></i>&nbsp; Usuários</a>
+            </li>
+
+            <li class="nav-item margin-top-10">
+                <a class="nav-link btn btn-outline-light" href="{% url 'investimento' %}"><i class="fa-solid fa-hand-holding-dollar" style="color: #7B78E5;"></i>&nbsp; Investimento</a>
+            </li>
+        </ul>        
+    </div>                         
+</nav>
